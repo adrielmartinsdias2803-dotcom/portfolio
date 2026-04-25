@@ -1,510 +1,269 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="color-scheme: dark;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adriel Martins Dias | Desenvolvedor Full Stack</title>
-  <meta name="description" content="Portfólio de Adriel Martins Dias - Desenvolvedor Full Stack. Automação, sites de vendas, apps empresariais, dashboards e sistemas sob medida.">
-  <meta property="og:title" content="Adriel Martins Dias | Desenvolvedor Full Stack">
-  <meta property="og:description" content="Transformo ideias em soluções digitais — automações, apps empresariais, sites de vendas e dashboards interativos.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="adriel-foto.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adriel Martins Dias | Dev Full Stack">
-  <meta name="twitter:description" content="Automação, sites de vendas, apps empresariais e dashboards interativos.">
+  <title>Adriel Martins Dias | Arquiteto de Sistemas Full Stack</title>
+  
+  <meta name="description" content="Especialista em desenvolvimento de sistemas enterprise e arquitetura de elite.">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
-<div class="progress-bar" id="progressBar"></div>
-<div class="cursor-glow" id="cursorGlow"></div>
-<div class="bg-animation"></div>
-<div class="particles" id="particles"></div>
+<!-- Split Hero Section (PT-BR) -->
+<section class="split-hero">
+  <div class="hero-left">
+    <div class="hero-header-wrapper" style="position: absolute; top: 3rem; left: 8%; display: flex; align-items: center; gap: 3rem; z-index: 10;">
+      <div class="logo-circle" translate="no">AD</div>
+      <nav class="hero-nav-left">
+        <a href="#historia">Sobre mim</a>
+        <a href="#competencias">Habilidades</a>
+        <a href="#projetos">Trabalhos</a>
+        <a href="#contato" class="nav-contact-btn">Fale Comigo</a>
+      </nav>
+    </div>
 
-<!-- Navigation -->
-<nav>
-  <div class="nav-content">
-    <div class="logo">AM</div>
-    <ul class="nav-links">
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#competencias">Competências</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-badge">
-        <span>🚀</span> Aberto a novas oportunidades
-      </div>
-      <h1>
-        Olá, eu sou<br>
-        <span class="gradient-text">Adriel Martins Dias</span>
-      </h1>
-      <div class="hero-subtitle">
-        <span id="typingText"></span><span class="typing-cursor"></span>
-      </div>
-      <p>Transformo ideias em soluções digitais completas — de automações inteligentes a aplicativos empresariais, sites de vendas e dashboards interativos que impulsionam resultados.</p>
-      <div class="cta-buttons">
-        <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
+    <div class="hero-main-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Adriel Martins Dias</h1>
+      <p class="hero-role">Arquiteto de Sistemas Full Stack / Sênior Developer</p>
+      
+      <div class="hero-social-cards">
+        <a href="https://api.whatsapp.com/send?phone=5519999919609" class="social-card" aria-label="WhatsApp" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         </a>
-        <a href="#projetos" class="btn-secondary">
-          Ver Projetos ↓
+        <a href="mailto:contato@adriel.com" class="social-card" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 8.818h-18.738l5.472-8.813zm9.201-1.259l4.623-3.746v9.458l-4.623-5.712z"/></svg>
         </a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-number" data-count="7">0</div>
-          <div class="stat-label">Projetos Entregues</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number" data-count="10">0</div>
-          <div class="stat-label">Tecnologias</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number" data-count="3">0</div>
-          <div class="stat-label">Apps em Produção</div>
-        </div>
+        <a href="https://github.com/adrielmartinsdias2803-dotcom" class="social-card" aria-label="GitHub" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/adriel-dias-606a2a350" class="social-card" aria-label="LinkedIn" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
       </div>
     </div>
-    <div class="hero-photo">
-      <div class="photo-ring">
-        <img src="adriel-foto.jpg" alt="Adriel Martins Dias">
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-image-container">
+      <img src="adriel-foto.jpg" alt="Adriel Martins Dias" class="hero-portrait" width="800" height="1000">
+    </div>
+  </div>
+</section>
+
+<!-- About Section (Bento Grid) -->
+<section id="historia" class="about-section">
+  <div class="container">
+    <div class="section-header" style="text-align: left; margin-bottom: 3rem;">
+      <span class="section-badge">A Origem</span>
+      <h2 style="font-family: var(--font-sans); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; margin-top: 1rem; letter-spacing: -2px;">Minha <span class="text-gradient">Trajetória</span></h2>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Main Bio Card -->
+      <div class="bento-item bento-bio">
+        <h3>Transformando código em estratégia de negócio.</h3>
+        <p>Iniciei minha jornada focado em resolver problemas reais de grandes operações. Sou especialista em construir ecossistemas digitais que não apenas funcionam, mas escalam com precisão técnica absoluta. Não escrevo apenas código, construo produtos sólidos.</p>
+        
+        <div class="bio-code-block">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-title">filosofia.ts</span>
+          </div>
+          <pre><code><span class="keyword">const</span> <span class="variable">desenvolvedor</span> = {
+  <span class="property">foco</span>: <span class="string">"Arquitetura e Escala"</span>,
+  <span class="property">lema</span>: <span class="string">"Menos código, mais impacto."</span>
+};</code></pre>
+        </div>
+      </div>
+
+      <!-- Location Card -->
+      <div class="bento-item bento-location">
+        <div class="svg-icon" style="margin-bottom: 1rem;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4070f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <h4>Baseado no Brasil</h4>
+        <p>Criando soluções globais.</p>
+      </div>
+
+      <!-- Tech Stack Static Pills Card -->
+      <div class="bento-item bento-stack">
+        <h4>Core Stack</h4>
+        <div class="tech-pills">
+          <span class="pill">React</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Automação</span>
+          <span class="pill">APIs</span>
+          <span class="pill">Arquitetura</span>
+        </div>
+      </div>
+
+      <!-- Stats Card 1 -->
+      <div class="bento-item bento-stats">
+        <div class="stat-number">+7</div>
+        <div class="stat-label">Projetos <br>Em Produção</div>
+      </div>
+      
+      <!-- Stats Card 2 -->
+      <div class="bento-item bento-stats">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Anos de <br>Experiência</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projetos">
-  <div class="section-header reveal">
-    <h2>🔥 Projetos <span class="gradient-text">em Destaque</span></h2>
-    <p>Sistemas completos desenvolvidos para otimizar a gestão de segurança do trabalho</p>
-  </div>
-
-  <div class="projects-grid">
-    <!-- Project 1: Rota Segura -->
-    <div class="project-card reveal">
-      <div class="project-image">
-        <div class="carousel" id="carousel-rota">
-          <div class="carousel-track">
-            <div class="carousel-slide active">
-              <img src="rota_centro_comando.png" alt="Rota Segura - Centro de Comando">
-              <div class="carousel-caption">Centro de Comando</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="rota_calendario.png" alt="Rota Segura - Gestão de Calendário">
-              <div class="carousel-caption">Gestão de Calendário</div>
-            </div>
-            <div class="carousel-slide">
-              <img src="rota_dossie.png" alt="Rota Segura - Dossiê Executivo de Auditoria">
-              <div class="carousel-caption">Dossiê de Auditoria</div>
-            </div>
-          </div>
-          <button class="carousel-btn carousel-prev" onclick="changeSlide('carousel-rota', -1)">‹</button>
-          <button class="carousel-btn carousel-next" onclick="changeSlide('carousel-rota', 1)">›</button>
-          <div class="carousel-dots">
-            <span class="dot active" onclick="goToSlide('carousel-rota', 0)"></span>
-            <span class="dot" onclick="goToSlide('carousel-rota', 1)"></span>
-            <span class="dot" onclick="goToSlide('carousel-rota', 2)"></span>
-          </div>
-        </div>
+<!-- Competencies -->
+<section id="competencias" class="competencias-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-badge">Expertise</span>
+      <h2>O que eu <span class="accent-text">entrego.</span></h2>
+    </div>
+    
+    <div class="competencias-grid">
+      <div class="comp-card reveal">
+        <div class="comp-icon">⚡</div>
+        <h3>Automação</h3>
+        <p>Fluxos autônomos que economizam tempo operacional.</p>
       </div>
-      <div class="project-info">
-        <span class="project-type type-webapp">🌐 Web App + PWA</span>
+      <div class="comp-card reveal">
+        <div class="comp-icon">📊</div>
+        <h3>Dashboards</h3>
+        <p>BI focado em decisão estratégica e dados reais.</p>
+      </div>
+      <div class="comp-card reveal">
+        <div class="comp-icon">🏢</div>
+        <h3>Enterprise</h3>
+        <p>Arquitetura robusta para grandes ecossistemas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Showcase -->
+<section id="projetos" class="showcase-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-badge">Portfólio</span>
+      <h2>Trabalhos em <span class="accent-text">Destaque.</span></h2>
+    </div>
+
+    <article class="showcase-item reveal">
+      <div class="showcase-info">
+        <span class="project-num">01</span>
         <h3>Rota Segura</h3>
-        <p>Sistema completo de gestão de rotas de segurança do trabalho com calendário de inspeções, classificação de riscos, verificação de condições, observações comportamentais, relatórios executivos e integração com Power BI.</p>
-        <div class="project-tags">
-          <span>React</span><span>TypeScript</span><span>Supabase</span>
-          <span>Tailwind CSS</span><span>FullCalendar</span><span>PWA</span>
-          <span>jsPDF</span><span>Recharts</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="link-github">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
+        <p class="project-desc">Gestão industrial avançada. Inspeções, riscos e relatórios automatizados.</p>
+        <div class="project-meta"><span>React</span><span>Supabase</span></div>
+        <a href="https://github.com/adrielmartinsdias2803-dotcom" class="view-link">Ver no GitHub</a>
+      </div>
+      <div class="showcase-media">
+        <div class="device-frame">
+          <img src="rota_centro_comando.png" alt="Rota Segura" width="1200" height="800">
         </div>
       </div>
-    </div>
+    </article>
 
-    <!-- Project 2: Mococa Checklist -->
-    <div class="project-card reveal">
-      <div class="project-image">
-        <div class="carousel" id="carousel-checklist">
-          <div class="carousel-track">
-            <div class="carousel-slide active">
-              <img src="checklist_desktop.png" alt="Mococa Checklist - Desktop Dashboard">
-              <div class="carousel-caption">Dashboard Analítico</div>
-            </div>
-            <div class="carousel-slide" style="background: #050a18;">
-              <img src="checklist_mobile.png" alt="Mococa Checklist - Mobile App" style="object-fit: contain; padding: 20px;">
-              <div class="carousel-caption">Aplicativo Mobile</div>
-            </div>
-          </div>
-          <button class="carousel-btn carousel-prev" onclick="changeSlide('carousel-checklist', -1)">‹</button>
-          <button class="carousel-btn carousel-next" onclick="changeSlide('carousel-checklist', 1)">›</button>
-          <div class="carousel-dots">
-            <span class="dot active" onclick="goToSlide('carousel-checklist', 0)"></span>
-            <span class="dot" onclick="goToSlide('carousel-checklist', 1)"></span>
-          </div>
+    <article class="showcase-item reveal alt">
+      <div class="showcase-media">
+        <div class="device-frame">
+          <img src="sst_dashboard.png" alt="Dashboard SST" width="1200" height="800">
         </div>
       </div>
-      <div class="project-info">
-        <span class="project-type type-mobile">📱 App Mobile (PWA + Capacitor)</span>
-        <h3>Mococa Checklist</h3>
-        <p>Aplicativo mobile de inspeção de extintores conforme NR-23, com checklist digital, dashboard analítico, mapa de planta baixa, gestão de não conformidades e multi-filiais. Funciona offline como PWA.</p>
-        <div class="project-tags">
-          <span>React</span><span>TypeScript</span><span>Capacitor</span>
-          <span>Supabase</span><span>PWA</span><span>Recharts</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="link-github">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
+      <div class="showcase-info">
+        <span class="project-num">02</span>
+        <h3>SST Intelligence</h3>
+        <p class="project-desc">Insights poderosos para prevenção ativa de acidentes e gestão SST.</p>
+        <div class="project-meta"><span>Next.js</span><span>D3.js</span></div>
+        <a href="https://github.com/adrielmartinsdias2803-dotcom/dashboard-sst" class="view-link">Ver no GitHub</a>
       </div>
-    </div>
+    </article>
+  </div>
+</section>
 
-    <!-- Project 3: Integração de Terceiros -->
-    <div class="project-card reveal">
-      <div class="project-image">
-        <img src="integration.png" alt="Sistema de Integração de Terceiros">
-      </div>
-      <div class="project-info">
-        <span class="project-type type-webapp">🌐 Sistema Web</span>
-        <h3>Integração de Terceiros</h3>
-        <p>Sistema completo de controle de integração de colaboradores terceirizados com agendamento, cadastro de empresas, lista de presença, painel analítico, importação de planilhas Excel e geração de relatórios.</p>
-        <div class="project-tags">
-          <span>React</span><span>TypeScript</span><span>Supabase</span>
-          <span>Tailwind CSS</span><span>XLSX</span><span>Recharts</span>
-          <span>Vitest</span><span>react-to-print</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="link-github">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 4: Dashboard SST -->
-    <div class="project-card reveal">
-      <div class="project-image">
-        <img src="sst_dashboard.png" alt="Dashboard SST">
-      </div>
-      <div class="project-info">
-        <span class="project-type type-dashboard">📊 Dashboard Interativo</span>
-        <h3>Dashboard SST</h3>
-        <p>Sistema interativo de visualização e análise de dados de Saúde e Segurança do Trabalho com estatísticas em tempo real, gráficos dinâmicos e indicadores de riscos ocupacionais.</p>
-        <div class="project-tags">
-          <span>TypeScript</span><span>React</span><span>Recharts</span>
-          <span>Data Visualization</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/adrielmartinsdias2803-dotcom/dashboard-sst" target="_blank" class="link-github">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 5: Site Mococa -->
-    <div class="project-card reveal">
-      <div class="project-image">
-        <img src="dashboard.png" alt="Site Institucional Mococa">
-      </div>
-      <div class="project-info">
-        <span class="project-type type-site">🏢 Site Institucional</span>
-        <h3>Site Mococa</h3>
-        <p>Website institucional desenvolvido para apresentação da empresa, seus serviços e soluções em segurança do trabalho, com design moderno e responsivo.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          <span>Responsive Design</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/adrielmartinsdias2803-dotcom/sitemococa" target="_blank" class="link-github">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
+<!-- Contact -->
+<section class="contact-section" id="contato">
+  <div class="container reveal">
+    <div class="contact-box">
+      <h2>Vamos construir o <span class="accent-text">extraordinário?</span></h2>
+      <p>Disponível para consultoria e projetos de alto impacto.</p>
+      
+      <div class="contact-buttons">
+        <a href="https://api.whatsapp.com/send?phone=5519999919609" target="_blank" class="btn-contact">WhatsApp</a>
+        <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="btn-contact">GitHub</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Technologies Section -->
-<section id="tecnologias">
-  <div class="section-header reveal">
-    <h2>⚡ Stack <span class="gradient-text">Tecnológica</span></h2>
-    <p>Tecnologias que utilizo para construir soluções robustas e escaláveis</p>
-  </div>
-  <div class="tech-grid reveal">
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#61DAFB"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 01-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51a17.2 17.2 0 00-.34.81c.26.06.54.12.83.17l-.2-.47m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1.03-.95-1.5a25.4 25.4 0 00-3.34 0c-.33.47-.65.97-.95 1.5L8.56 12l.81 1.5c.3.53.62 1.03.95 1.5a25.4 25.4 0 003.34 0c.33-.47.65-.97.95-1.5m2.04.19c.12.36.22.72.31 1.08 1.07-.25 1.84-.6 2.17-1.01-.34-.59-1.03-1.1-2-.53l-.48-.54m-5.38 5.13a14.5 14.5 0 001.74-2.32c-.57-.06-1.15-.06-1.74 0-.58.06-1.15.06-1.74 0a14.5 14.5 0 001.74 2.32M16.63 4c-.63-.38-2.01.2-3.6 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.31-3.96m-.71 5.74l.29.51c.12-.27.23-.54.34-.81-.26-.06-.54-.12-.83-.17l.2.47m-1.18 1.76c.3-.53.58-1.07.83-1.63-.25-.56-.53-1.1-.83-1.63a22 22 0 00-1.75-.14c-.6 0-1.18.05-1.75.14-.3.53-.58 1.07-.83 1.63.25.56.53 1.1.83 1.63.57.09 1.15.14 1.75.14.6 0 1.18-.05 1.75-.14M12 6.78c-.64.68-1.24 1.45-1.74 2.32.57.06 1.15.06 1.74 0 .58-.06 1.15-.06 1.74 0A14.5 14.5 0 0012 6.78M20.03 8c-.34.59-1.03 1.1-2 .53.16.18.32.37.48.54-.12-.36-.22-.72-.31-1.08-1.07.25-1.84.6-2.17 1.01z"/></svg></div><h4>React</h4><p>Frontend</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#3178C6"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 011.306.34v2.458a3.95 3.95 0 00-.643-.361 5.093 5.093 0 00-.717-.26 5.453 5.453 0 00-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 00-.623.242c-.17.104-.3.229-.393.374a.888.888 0 00-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 01-1.012 1.085 4.38 4.38 0 01-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 01-1.84-.164 5.544 5.544 0 01-1.512-.493v-2.63a5.033 5.033 0 003.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 00-.074-1.089 2.12 2.12 0 00-.537-.5 5.597 5.597 0 00-.807-.444 27.72 27.72 0 00-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 011.47-.629 7.536 7.536 0 011.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg></div><h4>TypeScript</h4><p>Tipagem</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#646CFF"><path d="m12.001 1.307-11.2 11.2 4.8 4.8 6.4-6.4 6.4 6.4 4.8-4.8-11.2-11.2Zm0 13.6-2.4 2.4 2.4 2.4 2.4-2.4-2.4-2.4Z"/></svg></div><h4>Vite</h4><p>Build Tool</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#06B6D4"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg></div><h4>Tailwind CSS</h4><p>Styling</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#3ECF8E"><path d="M21.362 9.354H12V.396h9.362a.636.636 0 01.631.716L21.362 9.354zM12 .396v8.958H2.638a.636.636 0 01-.631-.716L2.638.396H12zm0 13.25v8.958h9.362a.636.636 0 00.631-.716l-.631-8.242H12zM12 13.646v8.958H2.638a.636.636 0 01-.631-.716l.631-8.242H12z"/></svg></div><h4>Supabase</h4><p>Backend/DB</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#119EFF"><path d="M6 4v16h12V4H6zm10 14H8V6h8v12zm-6-5c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z"/></svg></div><h4>Capacitor</h4><p>Mobile</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#ffffff"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h4>shadcn/ui</h4><p>Componentes</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#22B5BF"><path d="M3 3v18h18V3H3zm15 15H6V6h12v12zm-2-9H8v2h8V9zm0 4H8v2h8v-2z"/></svg></div><h4>Recharts</h4><p>Gráficos</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#3068B7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div><h4>Zod</h4><p>Validação</p></div>
-    <div class="tech-item"><div class="tech-icon"><svg viewBox="0 0 24 24" width="36" height="36" fill="#5A0FC8"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div><h4>PWA</h4><p>Progressive Web</p></div>
-  </div>
-</section>
-
-<!-- Competencies Section -->
-<section id="competencias">
-  <div class="section-header reveal">
-    <h2>💼 O que eu <span class="gradient-text">faço por você</span></h2>
-    <p>Soluções digitais completas para impulsionar seu negócio</p>
-  </div>
-  <div class="features reveal">
-    <div class="feature-card">
-      <div class="feature-icon">⚡</div>
-      <h4>Automação de Processos</h4>
-      <p>Automatizo tarefas repetitivas da sua empresa — checklists, relatórios, notificações e fluxos de trabalho que economizam horas por dia.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🛒</div>
-      <h4>Sites de Vendas</h4>
-      <p>Lojas virtuais e landing pages de alta conversão com design moderno, integração de pagamento e SEO otimizado para atrair clientes.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🏢</div>
-      <h4>Aplicativos Empresariais</h4>
-      <p>Sistemas sob medida para sua empresa — gestão de equipes, controle de processos, integração de departamentos e muito mais.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📱</div>
-      <h4>Apps Mobile</h4>
-      <p>Aplicativos para Android e iOS que funcionam offline, com notificações push e instalação direto no celular via PWA ou app nativo.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <h4>Dashboards & BI</h4>
-      <p>Painéis interativos com gráficos em tempo real, KPIs, relatórios em PDF e integração com Power BI para tomada de decisão.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔧</div>
-      <h4>Sistemas Sob Medida</h4>
-      <p>Desenvolvimento personalizado para qualquer necessidade — do banco de dados ao frontend, com autenticação, permissões e deploy.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Experience Timeline -->
-<section id="experiencia">
-  <div class="section-header reveal">
-    <h2>🚀 Minha <span class="gradient-text">Trajetória</span></h2>
-    <p>Experiência profissional e projetos desenvolvidos</p>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">2025 — Presente</div>
-      <div class="timeline-card">
-        <h4>Desenvolvedor Full Stack</h4>
-        <div class="timeline-company">Freelancer & Projetos Próprios</div>
-        <p>Desenvolvimento de sistemas completos de gestão, aplicativos mobile, automações de processos e dashboards para empresas. +7 projetos entregues em produção.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">2024 — 2025</div>
-      <div class="timeline-card">
-        <h4>Sistemas de Segurança do Trabalho</h4>
-        <div class="timeline-company">Mococa — SST Digital</div>
-        <p>Criação do sistema Rota Segura com 25+ páginas, gestão de inspeções, classificação de riscos, geração de dossiês executivos e integração com Power BI.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">2024</div>
-      <div class="timeline-card">
-        <h4>Aplicativos Mobile (PWA)</h4>
-        <div class="timeline-company">Checklist de Extintores NR-23</div>
-        <p>Desenvolvimento de app mobile com Capacitor para inspeção de extintores, funcionando offline, com dashboard analítico e mapa de planta baixa.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">2023 — 2024</div>
-      <div class="timeline-card">
-        <h4>Formação em Desenvolvimento Web</h4>
-        <div class="timeline-company">Estudos & Capacitação</div>
-        <p>Aprofundamento em React, TypeScript, Supabase, e arquitetura de sistemas modernos. Início da carreira como desenvolvedor full stack.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section id="contato" class="cta-section">
-  <div class="cta-box reveal">
-    <h2>Vamos construir algo <span class="gradient-text">incrível</span> juntos?</h2>
-    <p>Estou sempre aberto a novos desafios e oportunidades de colaboração. Entre em contato!</p>
-    <div class="cta-buttons">
-      <a href="https://api.whatsapp.com/send?phone=5519999919609&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20experi%C3%AAncia%20em%20desenvolvimento%20de%20sistemas." target="_blank" class="btn-whatsapp">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp
-      </a>
-      <a href="https://github.com/adrielmartinsdias2803-dotcom" target="_blank" class="btn-primary">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/adriel-dias-606a2a350" target="_blank" class="btn-secondary">
-        💼 LinkedIn
-      </a>
-    </div>
-  </div>
-</section>
-
-<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <footer>
-  <p>© 2026 Adriel Martins Dias · Desenvolvido com ❤️ e muito ☕</p>
+  <p>© 2026 Adriel Martins Dias · Engineered with Precision</p>
 </footer>
 
 <script>
-// Cursor glow
-const glow = document.getElementById('cursorGlow');
-document.addEventListener('mousemove', e => {
-  glow.style.left = e.clientX + 'px';
-  glow.style.top = e.clientY + 'px';
-});
+  gsap.registerPlugin(ScrollTrigger);
 
-// Particles
-const particlesEl = document.getElementById('particles');
-for (let i = 0; i < 40; i++) {
-  const p = document.createElement('div');
-  p.classList.add('particle');
-  p.style.left = Math.random() * 100 + '%';
-  p.style.animationDuration = (Math.random() * 18 + 12) + 's';
-  p.style.animationDelay = (Math.random() * 12) + 's';
-  p.style.width = p.style.height = (Math.random() * 3 + 1) + 'px';
-  particlesEl.appendChild(p);
-}
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Hero Anim - ELITE ENTRY SEQUENCE
+    const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
 
-// Typing effect
-const phrases = ['Full Stack Developer', 'Automação de Processos', 'Sites de Vendas', 'Apps Empresariais', 'Dashboards & BI', 'React + TypeScript'];
-let pi = 0, ci = 0, deleting = false;
-const typingEl = document.getElementById('typingText');
-function typeLoop() {
-  const phrase = phrases[pi];
-  if (!deleting) {
-    typingEl.textContent = phrase.substring(0, ++ci);
-    if (ci === phrase.length) { deleting = true; setTimeout(typeLoop, 2000); return; }
-  } else {
-    typingEl.textContent = phrase.substring(0, --ci);
-    if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
-  }
-  setTimeout(typeLoop, deleting ? 40 : 80);
-}
-typeLoop();
+    // A foto aparece com um efeito cinemático (escala e desfoque)
+    tl.fromTo(".hero-portrait", 
+        { scale: 1.15, opacity: 0, filter: "blur(10px)" }, 
+        { scale: 1, opacity: 1, filter: "blur(0px)", duration: 2.5 })
+        
+    // O painel esquerdo desliza e acende
+      .fromTo(".hero-left", 
+        { x: "-3%", opacity: 0 }, 
+        { x: "0%", opacity: 1, duration: 1.5 }, "-=2")
+        
+    // O cabeçalho desce
+      .fromTo(".hero-header-wrapper", 
+        { y: -30, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 1.2 }, "-=1.5")
+        
+    // Os textos principais sobem em cascata (stagger)
+      .fromTo([".hero-greeting", ".hero-name", ".hero-role"], 
+        { y: 40, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 1.2, stagger: 0.15 }, "-=1.2")
+        
+    // Cards Sociais saltam elásticos
+      .fromTo(".social-card", 
+        { scale: 0.5, opacity: 0, y: 20 }, 
+        { scale: 1, opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "back.out(1.5)" }, "-=0.8");
 
-// Counter animation
-const counters = document.querySelectorAll('[data-count]');
-const counterObs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      const target = +el.dataset.count;
-      let current = 0;
-      const inc = () => {
-        current += Math.ceil(target / 30);
-        if (current >= target) { el.textContent = target + '+'; return; }
-        el.textContent = current + '+';
-        requestAnimationFrame(inc);
-      };
-      inc();
-      counterObs.unobserve(el);
+    // 2. General Reveals
+    gsap.utils.toArray('.reveal').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: "top 85%" },
+        opacity: 0, y: 30, duration: 1, ease: "power3.out"
+      });
+    });
+
+    // 3. Cursor Glow Follow
+    const glow = document.getElementById('cursorGlow');
+    if(glow) {
+      window.addEventListener('mousemove', e => {
+        gsap.to(glow, { x: e.clientX, y: e.clientY, duration: 0.6 });
+        const x = (e.clientX / window.innerWidth) * 100;
+        const y = (e.clientY / window.innerHeight) * 100;
+        document.body.style.setProperty('--mouse-x', x + '%');
+        document.body.style.setProperty('--mouse-y', y + '%');
+      });
     }
   });
-}, { threshold: 0.5 });
-counters.forEach(c => counterObs.observe(c));
-
-// Scroll reveal with stagger
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 120);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
-revealEls.forEach(el => observer.observe(el));
-
-// Navbar scroll + progress bar + back to top
-const progressBar = document.getElementById('progressBar');
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
-  // Progress bar
-  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrolled = (window.scrollY / scrollHeight) * 100;
-  progressBar.style.width = scrolled + '%';
-  // Back to top
-  backToTop.classList.toggle('visible', window.scrollY > 400);
-});
-
-// Timeline reveal
-const timelineItems = document.querySelectorAll('.timeline-item');
-const tlObs = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 150);
-      tlObs.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.2 });
-timelineItems.forEach(el => tlObs.observe(el));
-
-// Carousel
-function changeSlide(id, dir) {
-  const c = document.getElementById(id);
-  const slides = c.querySelectorAll('.carousel-slide');
-  const dots = c.querySelectorAll('.dot');
-  let cur = [...slides].findIndex(s => s.classList.contains('active'));
-  slides[cur].classList.remove('active');
-  dots[cur].classList.remove('active');
-  cur = (cur + dir + slides.length) % slides.length;
-  slides[cur].classList.add('active');
-  dots[cur].classList.add('active');
-}
-function goToSlide(id, i) {
-  const c = document.getElementById(id);
-  c.querySelectorAll('.carousel-slide').forEach(s => s.classList.remove('active'));
-  c.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
-  c.querySelectorAll('.carousel-slide')[i].classList.add('active');
-  c.querySelectorAll('.dot')[i].classList.add('active');
-}
-document.querySelectorAll('.carousel').forEach(c => {
-  setInterval(() => changeSlide(c.id, 1), 5000);
-});
-
-// Tilt effect on project cards
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const rect = card.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `translateY(-8px) perspective(1000px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
 </script>
 
 </body>
