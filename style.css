@@ -534,13 +534,14 @@ body {
 
 .code-content pre {
   margin: 0;
-  color: #ffffff;
+  color: #abb2bf; /* Cor base do código */
 }
 
-.code-content .keyword { color: #ffffff; font-weight: 400; }
-.code-content .variable { color: #ffffff; }
-.code-content .property { color: #ffffff; }
-.code-content .string { color: #ffffff; opacity: 0.9; }
+/* VS Code / One Dark Theme Colors */
+.code-content .keyword { color: #c678dd; font-weight: 500; } /* Roxo (const, let, etc) */
+.code-content .variable { color: #e5c07b; } /* Amarelo (nomes de variáveis/objetos) */
+.code-content .property { color: #e06c75; } /* Vermelho/Rosa (chaves de objetos) */
+.code-content .string { color: #98c379; } /* Verde (strings) */
 
 .code-scrollbar {
   height: 4px;
