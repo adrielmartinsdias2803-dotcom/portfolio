@@ -591,18 +591,20 @@ body {
   gap: 0;
 }
 
-/* PERSONAGEM */
+/* FOTO APRESENTAÇÃO */
 .hero-people {
   position: absolute;
   top: 0;
   right: 0;
-  width: 75%;
+  width: 65%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center top;
   z-index: 1;
-  mix-blend-mode: screen;
-  filter: contrast(1.2) brightness(1.05) saturate(1.1);
+  border-radius: 16px;
+  filter: contrast(1.05) brightness(0.95) saturate(1.05);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 30%, transparent 95%);
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 30%, transparent 95%);
 }
 
 /* Glow atrás dos personagens */
