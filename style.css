@@ -454,23 +454,30 @@ body {
 
 /* Bio Typography */
 .bio-title {
-  font-size: 2.4rem;
+  font-family: var(--font-sans);
+  font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  line-height: 1.15;
+  margin-bottom: 2rem;
   color: white;
+  letter-spacing: -1px;
 }
 
 .gold-text { color: var(--accent); }
 
 .bio-p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
-.bio-p strong { color: rgba(255,255,255,0.8); }
+.bio-p strong { 
+  color: white; 
+  font-weight: 700; 
+}
 
 /* Mini Code Window */
 .mini-code-window {
@@ -583,7 +590,7 @@ body {
 
 /* TEXTO */
 .trajetoria-content {
-  max-width: 520px;
+  max-width: 600px; /* Ampliado de 520px para melhor respiro */
   z-index: 2;
   position: relative;
   display: flex;
@@ -596,15 +603,16 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 65%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   z-index: 1;
   border-radius: 16px;
   filter: contrast(1.05) brightness(0.95) saturate(1.05);
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 30%, transparent 95%);
-  mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 30%, transparent 95%);
+  /* Fade mais suave: transparente na esquerda, sólido na direita */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 35%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 35%);
 }
 
 /* Glow atrás dos personagens */
@@ -632,7 +640,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 2.5rem;
-  max-width: 520px;
+  max-width: 100%; /* Ocupa todo o content ampliado */
   position: relative;
   z-index: 3;
 }
@@ -641,24 +649,32 @@ body {
   background: rgba(20, 20, 25, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 0.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.traj-stat:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.15);
 }
 
 .traj-stat h4 {
   color: white;
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 .traj-stat p {
-  color: var(--text-gray);
-  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 /* RESPONSIVO */
